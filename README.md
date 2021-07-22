@@ -1,3 +1,4 @@
+[![Build](https://github.com/alexUXUI/NASA/actions/workflows/build.yml/badge.svg)](https://github.com/alexUXUI/NASA/actions/workflows/build.yml)
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
