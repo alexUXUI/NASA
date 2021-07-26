@@ -11,6 +11,7 @@
     "pretty": "prettier --ignore-path .gitignore \"**/*.+(js|json|md)\"",
     "start": "next start",
     "test": "jest",
+    "precommit": "npm-run-all --parallel lint pretty",
     "cy:run": "npx cypress run",
     "cy:open": "npx cypress open",
     "e2e:test": "npx browserslist@latest --update-db && start-server-and-test start http://localhost:3000 cy:run"
@@ -41,9 +42,12 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-security": "^1.4.0",
+    "husky": "^7.0.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.0.6",
+    "lint-staged": "^11.1.1",
     "msw": "^0.32.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.3.2",
     "start-server-and-test": "^1.12.6"
   }
