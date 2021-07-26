@@ -11,10 +11,10 @@
     "pretty": "prettier --ignore-path .gitignore \"**/*.+(js|json|md)\"",
     "start": "next start",
     "test": "jest",
-    "precommit": "npm-run-all --parallel lint pretty",
     "cy:run": "npx cypress run",
     "cy:open": "npx cypress open",
-    "e2e:test": "npx browserslist@latest --update-db && start-server-and-test start http://localhost:3000 cy:run"
+    "e2e:test": "npx browserslist@latest --update-db && start-server-and-test start http://localhost:3000 cy:run",
+    "prepare": "husky install"
   },
   "dependencies": {
     "axios": "^0.21.1",
