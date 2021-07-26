@@ -50,5 +50,13 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.3.2",
     "start-server-and-test": "^1.12.6"
+  },
+  "lint-staged": {
+    "*.+(js|jsx)": [
+      "eslint --write"
+    ],
+    "*.+(js|json|md)": [
+      "prettier --write"
+    ]
   }
 }
