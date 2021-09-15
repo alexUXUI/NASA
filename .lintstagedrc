@@ -1,0 +1,8 @@
+{
+  "*.+(js|jsx)":[
+    "eslint --write"
+  ],
+  "*.+(js|json|md)":[
+    "prettier --write"
+  ]
+}
