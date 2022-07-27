@@ -72,6 +72,7 @@ context("Files", () => {
     });
 
     cy.fixture("users").should((users) => {
+      // eslint-disable-next-line no-unused-expressions
       expect(users[0].name).to.exist;
     });
 

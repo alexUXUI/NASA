@@ -84,6 +84,7 @@ context("Cypress.arch", () => {
 
   it("Get CPU architecture name of underlying OS", () => {
     // https://on.cypress.io/arch
+    // eslint-disable-next-line no-unused-expressions
     expect(Cypress.arch).to.exist;
   });
 });
@@ -129,7 +130,9 @@ context("Cypress.dom", () => {
     const visibleP = Cypress.$(".dom-p p.visible").get(0);
 
     // our first paragraph has css class 'hidden'
+    // eslint-disable-next-line no-unused-expressions
     expect(Cypress.dom.isHidden(hiddenP)).to.be.true;
+    // eslint-disable-next-line no-unused-expressions
     expect(Cypress.dom.isHidden(visibleP)).to.be.false;
   });
 });
@@ -183,6 +186,7 @@ context("Cypress.platform", () => {
 
   it("Get underlying OS name", () => {
     // https://on.cypress.io/platform
+    // eslint-disable-next-line no-unused-expressions
     expect(Cypress.platform).to.be.exist;
   });
 });
@@ -194,6 +198,7 @@ context("Cypress.version", () => {
 
   it("Get current version of Cypress being run", () => {
     // https://on.cypress.io/version
+    // eslint-disable-next-line no-unused-expressions
     expect(Cypress.version).to.be.exist;
   });
 });

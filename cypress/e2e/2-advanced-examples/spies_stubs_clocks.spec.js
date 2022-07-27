@@ -15,6 +15,7 @@ context("Spies, Stubs, and Clock", () => {
 
     obj.foo();
 
+    // eslint-disable-next-line no-unused-expressions
     expect(spy).to.be.called;
   });
 
@@ -63,6 +64,7 @@ context("Spies, Stubs, and Clock", () => {
 
     obj.foo("foo", "bar");
 
+    // eslint-disable-next-line no-unused-expressions
     expect(stub).to.be.called;
   });
 
@@ -116,6 +118,7 @@ context("Spies, Stubs, and Clock", () => {
     expect(greeter.greet("World")).to.equal("Hi");
     // @ts-ignore
     expect(() => greeter.greet(42)).to.throw("Invalid name");
+    // eslint-disable-next-line no-unused-expressions
     expect(greeter.greet).to.have.been.calledTwice;
 
     // non-matched calls goes the actual method
